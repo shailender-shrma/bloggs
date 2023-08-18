@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            box-sizing: border-box;
+            width: 400px;
+            height: 270px;
+            background: rgb(165, 108, 230);
+            border: 1px solid rgb(247, 0, 255);
+            box-shadow: 12px 17px 51px rgba(101, 40, 255, 0.805);
+            backdrop-filter: blur(6px);
+            border-radius: 17px;
+            text-align: center;
+            cursor: pointer;
+            margin:10px;
+            transition: all 0.5s;
+            padding:12px;
+            display: flow-root;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            font-weight: bolder;
+            color: black;
+            overflow: hidden;
+          }
+          
+          .card:hover {
+            border: 1px solid black;
+            transform: scale(1.05);
+          }
+    </style>
+</head>
+<div class='card'>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+</div>
+    
+    
+</body>
+</html>

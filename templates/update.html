@@ -35,7 +35,6 @@
             border-radius:25px;
             transition:.25s;
             width:160px;
-            
         }
         .box input[type = "text"]:focus,.box input[type = "password"]:focus{
             border-color:#2ecc71;
@@ -55,7 +54,7 @@
                 border-radius:25px;
                 transition:.25s;
             }
-        .button[type='input']:hover{
+        .button:hover{
             background:#2ecc71;
             color:black;
             cursor:pointer ;
@@ -64,14 +63,13 @@
     </style>
 </head>
 <body>
-    <div class=box>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="button" type="submit" value="submit"></button>
-
+    <div class="box">
+    
+     <form method="post"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <input type="submit" value="Save" class="button"> 
     </form>
-</div>
-   
+</div> 
 </body>
 </html>
